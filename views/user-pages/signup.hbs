@@ -1,0 +1,10 @@
+<h2>Sign Up</h2>
+
+<form action="signup" method="post">
+<input type="text" placeholder="Username" name="username">
+<input type="password" placeholder="******" name="password">
+<button type="submit">Create account</button>
+{{#if error}}
+  <p>There was a problem: {{error}}</p>
+  {{/if}}
+</form>
